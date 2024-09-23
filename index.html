@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Data Validation Form for Students ID</h1>
+        <form id="registrationForm" onsubmit="return validateForm(event)">
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <span class="error" id="nameError"></span>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email-Id" required>
+            <span class="error" id="emailError"></span>
+            <br><br>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter your Phone no." required>
+            <span class="error" id="phoneError"></span>
+            <br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" placeholder="Enter your DOB" required>
+            <span class="error" id="dobError"></span>
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required>
+            <span class="error" id="ageError"></span>
+            <br><br>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" placeholder="Enter your address" required>
+            <span class="error" id="addressError"></span>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <span class="error" id="passwordError"></span>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
