@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/realistic-black-shimmer-background_23-2150083461.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726963200&semt=ais_hybrid');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 40%;
+    margin: 150px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 10px double #ccc;
+}
+
+.container label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.container input:focus {
+    border-color: hsl(210, 6%, 38%);
+    outline: none;
+    box-shadow: 0 0 5px #3b3e4280;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
